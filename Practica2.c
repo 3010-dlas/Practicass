@@ -49,14 +49,14 @@ void main(){
                         printf("Valor invalido. Ingrese una calificacion entre 0 y 10: ");
                         while (getchar() != '\n');
                     }
-                    *(calificaciones + total + i) = cal;  // <--- cambio aquí
+                    *(calificaciones + total + i) = cal; 
                 }
 
                 total += n;
 
                 float suma = 0;
                 for (int i = 0; i < total; i++){
-                    suma += *(calificaciones + i);  // <--- cambio aquí
+                    suma += *(calificaciones + i);  
                 }
 
                 float promedio = suma / total;
